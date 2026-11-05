@@ -1,0 +1,1 @@
+require("tasq").setup()

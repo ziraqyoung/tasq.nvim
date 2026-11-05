@@ -1,19 +1,19 @@
-<h1 align="center">tuxedo.nvim</h1>
+<h1 align="center">tasq.nvim</h1>
 
 <h1 align="center">
 <a href='#'><img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png" width="600px"/></a>
   <br> <br>
   <div>
-    <a href="https://github.com/IogaMaster/tuxedo.nvim/issues">
-        <img src="https://img.shields.io/github/issues/IogaMaster/tuxedo.nvim?color=fab387&labelColor=303446&style=for-the-badge">
+    <a href="https://github.com/IogaMaster/tasq.nvim/issues">
+        <img src="https://img.shields.io/github/issues/IogaMaster/tasq.nvim?color=fab387&labelColor=303446&style=for-the-badge">
     </a>
-    <a href="https://github.com/IogaMaster/tuxedo.nvim/stargazers">
-        <img src="https://img.shields.io/github/stars/IogaMaster/tuxedo.nvim?color=ca9ee6&labelColor=303446&style=for-the-badge">
+    <a href="https://github.com/IogaMaster/tasq.nvim/stargazers">
+        <img src="https://img.shields.io/github/stars/IogaMaster/tasq.nvim?color=ca9ee6&labelColor=303446&style=for-the-badge">
     </a>
-    <a href="https://github.com/IogaMaster/tuxedo.nvim">
-        <img src="https://img.shields.io/github/repo-size/IogaMaster/tuxedo.nvim?color=ea999c&labelColor=303446&style=for-the-badge">
+    <a href="https://github.com/IogaMaster/tasq.nvim">
+        <img src="https://img.shields.io/github/repo-size/IogaMaster/tasq.nvim?color=ea999c&labelColor=303446&style=for-the-badge">
     </a>
-    <a href="https://github.com/IogaMaster/tuxedo.nvim/blob/main/.github/LICENCE">
+    <a href="https://github.com/IogaMaster/tasq.nvim/blob/main/.github/LICENCE">
         <img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=ca9ee6&colorA=313244&colorB=cba6f7"/>
     </a>
     <br>
@@ -22,20 +22,20 @@
    </h1>
    <br>
 
-`tuxedo.nvim` is a window wrapper around the [tuxedo](https://github.com/webstonehq/tuxedo/) tui application.
-This plugin is like [lazygit.nvim](https://github.com/kdheepak/lazygit.nvim), but for tuxedo.
+`tasq.nvim` is a window wrapper around the [tasq](https://github.com/webstonehq/tasq/) tui application.
+This plugin is like [lazygit.nvim](https://github.com/kdheepak/lazygit.nvim), but for tasq.
 
 ## 📦 Installation and Usage
 
 Include the repo with your favorite package manager.
 
-After that setup will be automatically called, then you can either call the `:Tuxedo` command.
-Or run `require("tuxedo").tuxedo()`.
+After that setup will be automatically called, then you can either call the `:Tasq` command.
+Or run `require("tasq").tasq()`.
 
 ## Config
 
 ```lua
-require('tuxedo').setup {
+require('tasq').setup {
 	create_todo_file = true,
 	width_ratio = 0.95,
 	height_ratio = 0.80,

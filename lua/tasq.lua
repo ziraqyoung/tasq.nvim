@@ -11,7 +11,7 @@ local config_defaults = {
 
 M.config = {}
 
-function M.tuxedo()
+function M.tasq()
 	if win_id and vim.api.nvim_win_is_valid(win_id) then
 		vim.api.nvim_set_current_win(win_id)
 		return
@@ -48,7 +48,7 @@ function M.tuxedo()
 		col = col,
 		style = "minimal",
 		border = "rounded",
-		title = " Tuxedo ",
+		title = " Tasq ",
 		title_pos = "center",
 	}
 
@@ -56,7 +56,7 @@ function M.tuxedo()
 
 	vim.api.nvim_set_option_value("bufhidden", "wipe", { buf = buf_id })
 
-	vim.fn.termopen("tuxedo", {
+	vim.fn.termopen("tasq", {
 		on_exit = function(_, _, _)
 			if win_id and vim.api.nvim_win_is_valid(win_id) then
 				vim.api.nvim_win_close(win_id, true)
@@ -73,8 +73,8 @@ end
 function M.setup(opts)
 	opts = opts or {}
 	M.config = vim.tbl_deep_extend("force", {}, config_defaults, M.config, opts)
-	vim.api.nvim_create_user_command("Tuxedo", function()
-		M.tuxedo()
+	vim.api.nvim_create_user_command("Tasq", function()
+		M.tasq()
 	end, {})
 end
 
